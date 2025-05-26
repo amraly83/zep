@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./zep.yaml:/app/zep.yaml
+      - ./zep.yaml:/app/config/zep.yaml
     environment:
       - ZEP_CONFIG_FILE=zep.yaml
       - MODEL_NAME=your_model_name
