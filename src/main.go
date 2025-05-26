@@ -17,6 +17,14 @@ import (
 )
 
 func main() {
+	// DEBUG: Print ZEP_API_KEY env variable at startup
+	apiKey := os.Getenv("ZEP_API_KEY")
+	if apiKey == "" {
+		println("[DEBUG] ZEP_API_KEY is NOT set!")
+	} else {
+		println("[DEBUG] ZEP_API_KEY is set to: ", apiKey)
+	}
+
 	config.Load()
 
 	logger.InitDefaultLogger()
