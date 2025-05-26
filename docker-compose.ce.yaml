@@ -9,7 +9,7 @@ services:
     ports:
       - "8090:8000"
     volumes:
-      - ./zep.yaml:/app/config/zep.yaml
+      - ./zep.yaml:/app/zep.yaml
     environment:
       - ZEP_CONFIG_FILE=zep.yaml
       - ZEP_API_KEY=${ZEP_API_KEY}
