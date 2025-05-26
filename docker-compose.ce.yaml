@@ -82,7 +82,7 @@ services:
       start_period: 3s
     ports:
       - "7476:7474" # HTTP
-      - "7687:7687" # Bolt
+      - "7689:7687" # Bolt
     volumes:
       - neo4j_data:/data
     environment:
